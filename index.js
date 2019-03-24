@@ -1,12 +1,12 @@
 const { exec } = require('child_process');
 
 /**
- * @param {number[][]|number[]} args
+ * @param {number[][]|number[]|string[]|string[][]} args
  */
 const f = async (args) => {
 	const { stdout } = await new Promise((resolve, reject) => {
 		const script =
-			typeof args[0] === 'number'
+			typeof args[0] === 'number' || typeof args[0] === 'string'
 				? `c(${args.join(', ')})`
 				: args.map((a) => `c(${a.join(', ')})`).join(', ');
 

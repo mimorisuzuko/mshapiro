@@ -1,0 +1,10 @@
+{
+  "name": "mshapiro",
+  "version": "1.0.0",
+  "description": "Multivariate Shapiro Wilk testgig",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Hiroki Usuba <hrky0206@gmail.com> (http://mimorisuzuko.github.io/)",
+  "license": "MIT"
+}
